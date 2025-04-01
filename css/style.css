@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	height: 2000px;
+}
+
+a:hover {
+	background-color: rgb(173, 173, 173);
+}
+.logo {
+	width: 90px;
+}
+.hero {
+	background-image: url("../slike/hover.jpg");
+	position: center;
+	height: 400px;
+}
+.title {
+	text-align: center;
+	margin-top: 40px;
+}
+.products {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.box {
+	width: 350px;
+
+	margin-top: 40px;
+}
+.box img {
+	width: 100%;
+	height: 420px;
+}
+.box h4,
+.box h5 {
+	text-align: center;
+	margin-top: 10px;
+}
+.moreView {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+}
+.moreView button {
+	padding: 10px 60px;
+	border-radius: 20px;
+}
+.moreView button:hover {
+	background-color: rgb(122, 122, 122);
+	color: white;
+}
+
+.ourStory,
+.blog {
+	border: 1px solid black;
+	margin-right: 50px;
+	height: 500px;
+	background-color: rgb(173, 173, 173);
+	text-align: center;
+}
+.ourStory p,
+.blog p {
+	margin-top: 36px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+.icon article {
+	margin: 20px;
+}
+.icon article p {
+	font-size: 22px;
+}
+.link a {
+	text-decoration: none;
+}
+@media only screen and (max-width: 640px) {
+	.products {
+		flex-direction: column;
+	}
+
+	.story {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.5rem;
+		gap: 20px;
+	}
+	.story p {
+		font-size: 15px;
+	}
+	.icon {
+		height: 200px;
+	}
+	.icon article {
+		margin: 10px;
+	}
+
+	.icon article p {
+		font-size: 15px;
+		text-align: center;
+	}
+	.icon article i {
+		font-size: 40px;
+	}
+}
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+	@media only screen and (min-width: 641px) and (max-width: 1024px) {
+		.products {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 30px;
+		}
+
+		.box {
+			width: 30%;
+		}
+	}
+}
